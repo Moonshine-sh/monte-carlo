@@ -4,7 +4,7 @@
 #include <sstream>
 
 using namespace std;
-
+// kak vvodit (func N) func - 1-R polygon 2-R circle 3-R ring, N- number of dotes
 struct dot {
 	double x, y;
 	dot() {
@@ -19,8 +19,6 @@ dot max(dot* dotes, int kolvo);
 dot RandForm(dot maxDote, dot minDote);
 double IsPointInsidePolygon(dot* p, int kolvo, dot Rand);
 void RandomPolygon(dot* dotes, int kolvo);
-void read(dot* dotes, int kolvo);
-void Menu();
 double IsPointInsideCircle(dot Rand, double R);
 double IsPointInsideRing(dot Rand, double R, double r);
 
